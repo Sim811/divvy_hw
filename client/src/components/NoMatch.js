@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Header } from 'semantic-ui-react';
 
-
-const NoMatch = () => {
+const NoMatch = () => (
   <>
-    <h1>No Match</h1>
-    <link href='/'> Link back to Home </link>
+      <Header>
+        Error 404: Page Not Found
+      </Header>
+      <Link to='/'>
+        Home
+      </Link>
   </>
-}
+)
 
 export default NoMatch;
